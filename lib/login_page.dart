@@ -43,6 +43,7 @@ class _LoginPageState extends State<LoginPage> {
           CustomButton(
             myHint: "login", 
             onPressed: () {
+              setState(() {
               String username = txtUsername.text.toString();
               String password = txtPassword.text.toString();
 
@@ -53,7 +54,7 @@ class _LoginPageState extends State<LoginPage> {
                   statuslogin = "failed";
                   print("gagal login");
                 } 
-
+              });
             },
           ),
         ],
