@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: "Belajar flutter GetX",
-      initialRoute: Routes.listMakananPage,
+      initialRoute: Routes.loginPage,
       getPages: Routes.myPages,
     );
   }
